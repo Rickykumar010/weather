@@ -6,10 +6,11 @@ import { CloudRain } from 'lucide-react';
 
 import { Search } from 'lucide-react';
 export default function App() {
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState('')
     const [weather, setWeather] = useState(null);
     const fetchWeather=async()=>{
         try{
+            
             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=59db6b80c4735a40614797e878fde556&units=metric`);
             setWeather(response.data);
           }catch (error) {
