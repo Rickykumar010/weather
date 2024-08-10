@@ -1,20 +1,20 @@
 body {
-  background-color: rgb(64, 81, 112);
+  background-color: rgb(94, 98, 105);
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 .weather {
   background-image: url('https://media.istockphoto.com/id/1212286244/vector/beautiful-landscape-with-mountains-night-scene.jpg?s=612x612&w=0&k=20&c=cfQjsuwdwXqUXoubRCIqKK6f05QXiwWrT2bdb9XtdQU=');
-  border-radius: 10px;
+  border-radius: 40px;
+  height: auto;
+  min-height: 600px;
   padding: 20px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin: auto;
-  width: 900px;
-  height: 600px;
+  width: 800px;
 }
 
 .search-bar {
@@ -33,18 +33,17 @@ input {
 button {
   padding: 5px;
   border-radius: 50%;
-  border: 1px solid #ddd;
   background-color: white;
-  color: rgb(212, 197, 197);
+  color: rgb(13, 6, 6);
   font-size: 0.4rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 14px;
+  margin-left: 18px;
 
 }
 
 button:hover {
-  background-color: #151a1f;
+  background-color: #3c4d5f;
 }
 
 .weather-info {
@@ -73,6 +72,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
   margin-top: 20px;
 }
 

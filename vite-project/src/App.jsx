@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import { SunMedium } from 'lucide-react'; // Ensure this import is correct
+import { SunMedium } from 'lucide-react';
 import { CloudRain } from 'lucide-react';
 
 import { Search } from 'lucide-react';
@@ -26,7 +26,7 @@ export default function App() {
         <div className='weather'>
             <h1 style={{color:'white'}} >check your city weather</h1>
             <div className='search-bar'>
-                <input type="text" placeholder='Search your city here.....' value={input} onChange={(e) => setInput(e.target.value)} />     
+                <input type="text" placeholder='Search' value={input} onChange={(e) => setInput(e.target.value)} />     
                 <button onClick={handleSearch}><Search /></button>
             </div>
             {weather && (
@@ -35,9 +35,9 @@ export default function App() {
     <p className='temp'><span className='temperature'>{weather.main.temp}</span>°C</p>
     <p className='location'>{weather.name}</p>
      <div className='humidity-info'>
-    <CloudRain size={40} color="white" style={{marginLeft:'30px'}}/> 
+    <CloudRain size={40} color="white" style={{marginLeft:'30px'}}/>
+    <span>Humidity</span> 
     <p>{weather.main.humidity}%</p>
-    <span>Humidity</span>
                     </div>
                 </div>
             )}
